@@ -21,6 +21,8 @@ public class Main {
 			System.out.println("----------Menu----------");
 			System.out.println("1 - Cadastrar Produto:");
 			System.out.println("2 - Listar todos Produtos");
+			System.out.println("3 - Ordem crescente por nome");
+			System.out.println("0 - Sair");
 			System.out.println("------------------------\n");
 			opcao = input.nextInt();
 			switch (opcao) {
@@ -38,6 +40,10 @@ public class Main {
 			}
 			case 2: {
 				estoque.listar().forEach(e -> System.out.println(e));
+				break;
+			}
+			case 3: {
+				estoque.ordemCrescenteNome().forEach(e -> System.out.println(e));
 				break;
 			}
 			case 0: {
