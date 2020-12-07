@@ -10,4 +10,8 @@ public class Estoque {
 	public void adicionar(Produto produto) {
 		produtos.add(produto);
 	}
+	
+	public List<Produto> listar(){
+		return produtos;
+	}
 }

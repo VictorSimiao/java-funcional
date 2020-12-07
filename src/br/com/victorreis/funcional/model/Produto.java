@@ -6,9 +6,9 @@ public class Produto {
 	
 	private String nome;
 	private BigDecimal preco;
-	private Double quantidade;
+	private Integer quantidade;
 	
-	public Produto(String nome, BigDecimal preco, Double quantidade) {
+	public Produto(String nome, BigDecimal preco, Integer quantidade) {
 		this.nome = nome;
 		this.preco = preco;
 		this.quantidade = quantidade;
@@ -25,10 +25,10 @@ public class Produto {
 	public void setPreco(BigDecimal preco) {
 		this.preco = preco;
 	}
-	public Double getQuantidade() {
+	public Integer getQuantidade() {
 		return quantidade;
 	}
-	public void setQuantidade(Double quantidade) {
+	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
 	}
 	
