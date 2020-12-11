@@ -24,6 +24,7 @@ public class Main {
 			System.out.println("3 - Ordem crescente por nome");
 			System.out.println("4 - Ordem decrescente por nome");
 			System.out.println("5 - Ordem menor valor");
+			System.out.println("6 - Ordem maior valor");
 			System.out.println("0 - Sair");
 			System.out.println("------------------------\n");
 			opcao = input.nextInt();
@@ -54,6 +55,10 @@ public class Main {
 			}
 			case 5: {
 				estoque.ordemAscPreco().forEach(e -> System.out.println(e));
+				break;
+			}
+			case 6: {
+				estoque.ordemDescPreco().forEach(e -> System.out.println(e));
 				break;
 			}
 			case 0: {

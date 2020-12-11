@@ -28,5 +28,8 @@ public class Estoque {
 	public List<Produto> ordemAscPreco(){
 		return produtos.stream().sorted((p1,p2) -> p1.getPreco().compareTo(p2.getPreco())).collect(Collectors.toList());
 	}
+	public List<Produto> ordemDescPreco(){
+		return produtos.stream().sorted((p1,p2) -> -(p1.getPreco().compareTo(p2.getPreco()))).collect(Collectors.toList());
+	}
 }
 
