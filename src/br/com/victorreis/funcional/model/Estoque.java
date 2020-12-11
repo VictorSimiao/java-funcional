@@ -16,7 +16,13 @@ public class Estoque {
 		return produtos;
 	}
 	
-	public List<Produto> ordemCrescenteNome(){
-		return produtos.stream().sorted((p1, p2) -> p1.getNome().compareTo(p2.getNome())).collect(Collectors.toList());
+	public List<Produto> ordemAscNome(){
+		return produtos.stream().sorted((p1, p2) -> p1.getNome().compareToIgnoreCase(p2.getNome())).collect(Collectors.toList());
+	}
+	
+	
+	public List<Produto> ordemDescNome(){
+		return produtos.stream().sorted((p1, p2) -> - (p1.getNome().compareToIgnoreCase(p2.getNome()))).collect(Collectors.toList());
 	}
 }
+

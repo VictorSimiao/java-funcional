@@ -22,6 +22,7 @@ public class Main {
 			System.out.println("1 - Cadastrar Produto:");
 			System.out.println("2 - Listar todos Produtos");
 			System.out.println("3 - Ordem crescente por nome");
+			System.out.println("4 - Ordem decrescente por nome");
 			System.out.println("0 - Sair");
 			System.out.println("------------------------\n");
 			opcao = input.nextInt();
@@ -43,7 +44,11 @@ public class Main {
 				break;
 			}
 			case 3: {
-				estoque.ordemCrescenteNome().forEach(e -> System.out.println(e));
+				estoque.ordemAscNome().forEach(e -> System.out.println(e));
+				break;
+			}
+			case 4: {
+				estoque.ordemDescNome().forEach(e -> System.out.println(e));
 				break;
 			}
 			case 0: {
